@@ -29,7 +29,7 @@ searchbtn.on("click", function(){
 	d3.event.preventDefault();
 
 	var dateInputData = inputDate.property("value").trim();
-    var stateInputData = inputState.property("value").toLowerCase().trim();
+	var stateInputData = inputState.property("value").toLowerCase().trim();
     
 	// Filter by field matching input data
 	var filterDate = myData.filter(myData => myData.datetime === dateInputData);
